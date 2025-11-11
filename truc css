@@ -1,0 +1,275 @@
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/BasicBackground/BasicBackground.css);
+
+:root {
+	/* --- Transparences et couleurs générales --- */
+	--transparencycolor:		0, 0, 10;        /* Couleur principale des zones translucides */
+	--transparencyalpha:		0.25;           /* Légère obscurité sur le fond général */
+	--bordercolor:			20, 30, 60;     /* Couleur des bordures/dividers */
+	--messagetransparency:		0.7;            /* Messages légèrement translucides */
+	--guildchanneltransparency:	0.2;            /* Liste des serveurs et canaux */
+	--chatinputtransparency:	0.4;            /* Fond de la barre de chat */
+	--memberlisttransparency:	0.3;            /* Liste des membres */
+	--accentcolor:			88, 101, 242;   /* Accent bleu (Discord classique) */
+	
+	/* --- Options visuelles --- */
+	--settingsicons:		1;
+	--font:				"gg sans", "Noto Sans";
+	--textshadow:			rgba(0,0,0,0.3); /* Légère ombre pour rendre le texte plus lisible */
+	
+	/* --- Fond principal --- */
+	--background:			url("https://github.com/Dragon-138/vencord-css/raw/main/bloIRSR-dragon-wallpaper-1920x1080.jpg");
+	--backgroundposition:		center;
+	--backgroundsize:		cover;           /* cover pour un effet immersif */
+	--backgroundblur:	  0.6;              /* léger flou pour l’ambiance */
+	
+	/* --- Popups/modals --- */
+	--popout:			rgba(10, 10, 30, 0.85); /* légèrement transparent noir/bleu */
+	--popoutposition:		center;
+	--popoutsize:			cover;
+	--popoutblur:			5;
+	
+	/* --- Backdrop --- */
+	--backdrop:			rgba(0, 0, 0, 0.8);
+	--backdropposition:		center;
+	--backdropsize:			cover;
+	--backdropblur:			0;
+	
+	/* --- Textes --- */
+	--textbrightest: 		255, 255, 255;
+	--textbrighter: 		255, 255, 255;
+	--textbright: 			255, 255, 255;
+	--textdark: 			200, 200, 200;
+	--textdarker: 			255, 255, 255;
+	--textdarkest: 			60, 80, 120;
+	
+	--version1_0_5:			none;
+
+}
+
+/* Autre */
+
+@import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
+@import url("https://dragon-138.github.io/vencord-css/desktop.css");
+
+:root {
+
+    .visual-refresh section.panels_c48ade {
+    left: calc(var(--custom-guild-list-width) + var(--space-xs));
+    width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
+    box-sizing: content-box;
+
+    .actionButtons_e131a9 button {
+      padding: 0;
+    }
+  }
+  span[class*="timestampInline_"] {
+    font-size: 12px !important;
+  }
+}
+
+:root {
+    --custom-app-top-bar-height: 22px
+}
+[class^=bar] {
+    padding: unset;
+    > [class^=leading]
+    {
+        display: none;
+    }
+    > [class^=title] {
+        position: relative;
+        padding-left: 150px;
+        > [class^=title] > [class^=icon] {
+            height: 16px;
+            width: 16px;
+        }
+    }
+    > [class^=trailing] {
+        gap: unset;
+        > [class^=clickable]
+        {
+            height: 16px;
+            width: 16px;
+            padding: 3px 12px;
+            margin: unset;
+            &:hover
+            {
+                background-color: var(--background-modifier-hover);
+                color: var(--interactive-hover);
+            }
+            > [class^=badge]
+            {
+                height: 5px;
+                width: 5px;
+                bottom: 4px;
+                right: 13px;
+            }
+        }
+        > a[href="https://support.discord.com"] {
+            display: none;
+        }
+        > [class^=winButtons] {
+            gap: unset;
+            > [class^=winButton] {
+                width: calc(var(--custom-app-top-bar-height) * 2);
+            }
+        }
+    }
+}
+.containerDefault__29444 {
+  > div {
+    padding-left: 0.5em;
+
+    > div {
+      display: flex !important;
+      place-content: start !important;
+      flex-direction: row-reverse !important;
+    }
+  }
+}
+.visual-refresh div[class^="sidebar_"] section[class^="panels_"] {
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);
+    left: var(--custom-guild-list-width);
+    bottom: 0px;
+    border-radius: 0px;
+    border: none;
+}
+
+.visual-refresh nav[class*=guilds_] {
+  margin-bottom: unset;
+}
+
+/* version final */
+/* ====================== */
+/* Imports externes */
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/BasicBackground/BasicBackground.css);
+@import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
+@import url("https://dragon-138.github.io/vencord-css/desktop.css");
+
+/* ====================== */
+/* Variables principales (ambiance noir/bleu) */
+:root {
+    /* --- Transparences et couleurs générales --- */
+    --transparencycolor:      0, 0, 10;
+    --transparencyalpha:      0.25;
+    --bordercolor:            20, 30, 60;
+    --messagetransparency:    0.7;
+    --guildchanneltransparency: 0.2;
+    --chatinputtransparency:  0.4;
+    --memberlisttransparency: 0.3;
+    --accentcolor:            88, 101, 242;
+
+    /* --- Options visuelles --- */
+    --settingsicons:          1;
+    --font:                   "gg sans", "Noto Sans";
+    --textshadow:             rgba(0,0,0,0.3);
+
+    /* --- Fond principal --- */
+    --background:             url("https://github.com/Dragon-138/vencord-css/raw/main/bloIRSR-dragon-wallpaper-1920x1080.jpg");
+    --backgroundposition:     center;
+    --backgroundsize:         cover;
+    --backgroundblur:         0.6;
+
+    /* --- Popups/modals --- */
+    --popout:                 rgba(10, 10, 30, 0.85);
+    --popoutposition:         center;
+    --popoutsize:             cover;
+    --popoutblur:             5;
+
+    /* --- Backdrop --- */
+    --backdrop:               rgba(0, 0, 0, 0.8);
+    --backdropposition:       center;
+    --backdropsize:           cover;
+    --backdropblur:           0;
+
+    /* --- Textes --- */
+    --textbrightest:          255, 255, 255;
+    --textbrighter:           255, 255, 255;
+    --textbright:             255, 255, 255;
+    --textdark:               200, 200, 200;
+    --textdarker:             255, 255, 255;
+    --textdarkest:            60, 80, 120;
+
+    --version1_0_5:           none;
+
+    /* --- Custom top bar height --- */
+    --custom-app-top-bar-height: 22px;
+}
+
+/* ====================== */
+/* Suppression watermark BasicBackground */
+#basicBackgroundWatermark,
+.basicBackground-watermark {
+    display: none !important;
+}
+
+/* ====================== */
+/* Top bar minimaliste */
+[class^="bar"] {
+    padding: 0;
+}
+
+[class^="bar"] > [class^="leading"],
+[class^="bar"] > a[href="https://support.discord.com"] {
+    display: none !important;
+}
+
+[class^="bar"] > [class^="title"] {
+    position: relative;
+    padding-left: 0;
+}
+
+[class^="bar"] > [class^="trailing"] {
+    gap: 0;
+}
+
+[class^="bar"] > [class^="trailing"] > [class^="clickable"] {
+    height: 16px;
+    width: 16px;
+    padding: 3px 12px;
+    margin: 0;
+}
+
+[class^="bar"] > [class^="trailing"] > [class^="clickable"]:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--interactive-hover);
+}
+
+/* ====================== */
+/* Panels et sidebar */
+.visual-refresh section[class^="panels_"] {
+    left: calc(var(--custom-guild-list-width) + var(--space-xs));
+    width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
+    box-sizing: content-box;
+}
+
+.visual-refresh div[class^="sidebar_"] section[class^="panels_"] {
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);
+    left: var(--custom-guild-list-width);
+    bottom: 0;
+    border-radius: 0;
+    border: none;
+}
+
+.visual-refresh nav[class*=guilds_] {
+    margin-bottom: 0 !important;
+}
+
+/* ====================== */
+/* Timestamps et containers */
+span[class*="timestampInline_"] {
+    font-size: 12px !important;
+}
+
+.containerDefault__29444 > div > div {
+    display: flex !important;
+    place-content: start !important;
+    flex-direction: row-reverse !important;
+    padding-left: 0.5em;
+}
+
+
+
+
+
+
